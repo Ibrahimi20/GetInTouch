@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" dir="rtl" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Germany road</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2px;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      /* Container for text and form */
+      .container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      h1 {
+        color: rgb(184, 49, 47);
+        font-size: 2em;
+      }
+
+      p {
+        color: rgb(40, 50, 78);
+        font-size: 18px;
+      }
+
+      .product-price {
+        font-size: 5.5rem;
+        color: #d0021bff;
+        font-family: Almarai;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 150%;
+        letter-spacing: 0px;
+        text-shadow: 0px 0px 0px #000000;
+      }
+
+      .option-name {
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 0 10px;
+        text-align: center;
+      }
+
+      .radio-button-variant {
+        margin: 10px 0;
+      }
+
+      /* Ensure input fields are inline */
+      .form-group {
+        display: flex;
+        gap: 10px; /* Adds spacing between inputs */
+        justify-content: space-between;
+      }
+
+      .is-required {
+        flex: 1; /* Ensures both input fields take equal width */
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+
+      .is-required input {
+        width: 100%; /* Ensures input fills its container */
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .button {
+        padding: 14px 21px;
+        color: #ffffff;
+
+        margin-bottom: 10px;
+        background: #eb3223;
+        font-size: 25px;
+        height: auto !important;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+        width: calc(100% - 135px);
+      }
+
+      .footer-img {
+        width: 200px;
+        margin-top: 10px;
+      }
+
+      /* Styles for image */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .radio-buttons-container {
+        display: flex; /* Makes the children (radio-button-variant) appear in a row */
+        justify-content: center; /* Optional: Aligns items to the left */
+        gap: 20px; /* Optional: Adds space between radio buttons */
+        flex-wrap: wrap; /* Allows wrapping in case of screen size limitations */
+      }
+
+      .radio-button-variant {
+        display: flex;
+        align-items: center;
+        gap: 5px; /* Space between radio button and label */
+      }
+      .input_group {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .input_group input {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Centered Image Section -->
+    <img
+      src="business.jpg"
+      alt="Large Height Image"
+      id="scrollImage"
+      style="cursor: pointer"
+    />
+
+    <!-- Container for text, form, and footer -->
+    <div class="container section">
+      <div class="">
+        <h1>
+          عرض <span><strong>خــــــــــــاص</strong></span>
+        </h1>
+        <p>
+          المقاعد محدودة، آآآآآش كتسناآآ<br />
+          <span style="font-size: 30px">خلي لينا الرقم ديالك، وحنا </span>
+          <span style="font-size: 30px; color: rgb(226, 80, 65)">
+            <strong>غادي نتواصلو</strong>
+          </span>
+          <span style="font-size: 30px">معاك</span>
+          <br />
+          <span style="font-size: 30px"> باش نشرحو ليك كلشي</span>
+        </p>
+      </div>
+
+      <div class="product-price-container">
+        <div dir="rtl" class="product-price">
+          <span class="value">1000</span
+          ><span class="currency" style="font-size: 2.75rem"> د.م</span>
+        </div>
+      </div>
+      <form id="form">
+        <!-- choix pack -->
+        <div class="single-variant">
+          <span class="option-name">ختار العرض</span>
+          <div class="radio-buttons-container">
+            <div class="radio-buttons-container">
+              <div class="radio-button-variant">
+                <input
+                  type="radio"
+                  name="offre"
+                  id="offre18"
+                  value="1800"
+                  required
+                />
+                <label for="offre18">أنا وصاحبي : 1800 درهم</label>
+              </div>
+
+              <div class="radio-button-variant">
+                <input
+                  type="radio"
+                  name="offre"
+                  id="offre10"
+                  value="1000"
+                  required
+                />
+                <label for="offre10">بوحدي : 1000 درهم</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- client Info -->
+        <h2>للطلب ادخل معلوماتك في الخانات اسفله</h2>
+        <div class="form-group">
+          <div class="is-required">
+            <input
+              dir="rtl"
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="رقم الهاتف ..."
+              required
+            />
+          </div>
+
+          <div class="is-required">
+            <input
+              dir="rtl"
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="الاسم الكامل ..."
+            />
+          </div>
+        </div>
+        <div class="is-required">
+          <input
+            dir="rtl"
+            type="text"
+            name="adress"
+            id="adress"
+            placeholder="العنوان ..."
+          />
+        </div>
+
+        <button type="submit" class="button">إرسال</button>
+      </form>
+
+      <div class="footer">
+        <p>للتواصل معنا أو الاستفسار :</p>
+        <span dir="rtl">📞 الهاتف: +212808621897 / +212625358718</span>
+      </div>
+
+      <div class="footer-img-container">
+        <img src="./logo.png" class="footer-img" alt="Logo" />
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select all radio buttons
+        const radioButtons = document.querySelectorAll('input[name="offre"]');
+
+        // Select the span where the price will be updated
+        const priceValue = document.querySelector(".product-price .value");
+
+        // Add event listener to each radio button
+        radioButtons.forEach((radio) => {
+          radio.addEventListener("change", function () {
+            priceValue.textContent = this.value; // Update price with selected radio button value
+          });
+        });
+      });
+
+      document
+        .getElementById("scrollImage")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".section")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        function getSelectedOffer() {
+          const selectedRadio = document.querySelector(
+            'input[name="offre"]:checked'
+          );
+          return selectedRadio ? selectedRadio.value : "";
+        }
+        let data = {
+          offre: getSelectedOffer(),
+          fullname: document.getElementById("fullname").value,
+          phone: document.getElementById("phone").value,
+          adress: document.getElementById("adress").value,
+        };
+        // console.log(data);
+        fetch(
+          "https://script.google.com/macros/s/AKfycbziTfUJ9NgR1ooNUlNKYeqc4RczU91KqQDsIPhxsG26UJKcRS9-pu8frK4Cd58ZPigE/exec",
+          {
+            method: "POST",
+            mode: "no-cors",
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+          }
+        )
+          .then((res) => res.text())
+          .then((response) => alert(response))
+          .catch((error) => console.error(error));
+      });
+    </script>
+  </body>
+</html>
