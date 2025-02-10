@@ -163,8 +163,19 @@
         }
 
         .radio-buttons-container {
-          flex-direction: column;
-          gap: 10px;
+          display: flex;
+          flex-direction: row; /* Arrange items in a row */
+          justify-content: space-around; /* Space them out */
+          align-items: center; /* Align vertically */
+          /* Adjust spacing */
+          flex-wrap: nowrap; /* Prevent wrapping */
+        }
+
+        .radio-button-variant {
+          display: flex;
+          align-items: center;
+
+          white-space: nowrap; /* Prevent text from breaking */
         }
 
         .button {
