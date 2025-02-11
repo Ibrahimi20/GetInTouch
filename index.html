@@ -26,7 +26,8 @@
         padding: 20px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 80%;
+        /* width: 80%; */
+
         max-width: 600px;
         border-radius: 10px;
         margin-top: 10px;
@@ -98,7 +99,7 @@
         border-radius: 10px;
         cursor: pointer;
 
-        width: calc(100% - 135px);
+        width: 100%;
       }
 
       .footer-img {
@@ -131,8 +132,10 @@
       .input_group input {
         width: 100%;
       }
-
-       /* for mobile css */
+      .footer {
+        margin: 20px 0;
+      }
+      /* for mobile css */
       @media (max-width: 768px) {
         .container {
           width: 90%;
@@ -164,12 +167,11 @@
 
         .radio-buttons-container {
           display: flex;
-          flex-direction: row; 
-          justify-content: space-around;
-          align-items: center;
-          
-          flex-wrap: nowrap; 
-          
+          flex-direction: row; /* Arrange items in a row */
+          justify-content: space-around; /* Space them out */
+          align-items: center; /* Align vertically */
+          /* Adjust spacing */
+          flex-wrap: nowrap; /* Prevent wrapping */
         }
 
         .radio-button-variant {
@@ -182,24 +184,22 @@
         .button {
           font-size: 20px;
           width: 100%;
-          padding: 12px;
+          padding: 10px;
+          width: 100%;
         }
 
         .footer-img {
           width: 150px;
         }
+        .footer {
+          margin: 20px 0;
+        }
       }
-      
     </style>
   </head>
   <body>
     <!-- Centered Image Section -->
-    <img
-      src="business.jpg"
-      alt="Large Height Image"
-      id="scrollImage"
-      style="cursor: pointer"
-    />
+    <img src="business.jpg" alt="#" id="scrollImage" style="cursor: pointer" />
 
     <!-- Container for text, form, and footer -->
     <div class="container section">
@@ -229,29 +229,28 @@
         <!-- choix pack -->
         <div class="single-variant">
           <span class="option-name">ختار العرض</span>
-          <div class="radio-buttons-container">
-            <div class="radio-buttons-container">
-              <div class="radio-button-variant">
-                <input
-                  type="radio"
-                  name="offre"
-                  id="offre18"
-                  value="1800"
-                  required
-                />
-                <label for="offre18">أنا وصاحبي : 1800 درهم</label>
-              </div>
 
-              <div class="radio-button-variant">
-                <input
-                  type="radio"
-                  name="offre"
-                  id="offre10"
-                  value="1000"
-                  required
-                />
-                <label for="offre10">بوحدي : 1000 درهم</label>
-              </div>
+          <div class="radio-buttons-container">
+            <div class="radio-button-variant">
+              <label for="offre18">أنا وصاحبي : 1800 درهم</label>
+              <input
+                type="radio"
+                name="offre"
+                id="offre18"
+                value="1800"
+                required
+              />
+            </div>
+
+            <div class="radio-button-variant">
+              <label for="offre10">بوحدي : 1000 درهم</label>
+              <input
+                type="radio"
+                name="offre"
+                id="offre10"
+                value="1000"
+                required
+              />
             </div>
           </div>
         </div>
@@ -288,16 +287,12 @@
             placeholder="العنوان ..."
           />
         </div>
-
-         <div class="footer">
-        <p>للتواصل معنا أو الاستفسار :</p>
-        <span dir="rtl">📞 الهاتف: +212808621897 / +212625358718</span>
-      </div>
-
-        <button type="submit" class="button">إرسال</button>
+        <div class="footer">
+          <p>للتواصل معنا أو الاستفسار :</p>
+          <span dir="rtl">📞 الهاتف: +212808621897 / +212625358718</span>
+        </div>
+        <button type="submit" class="button" style="">إرسال</button>
       </form>
-
-     
 
       <div class="footer-img-container">
         <img src="./logo.png" class="footer-img" alt="Logo" />
